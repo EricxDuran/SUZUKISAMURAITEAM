@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Suzuki Samurai Team</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="barra-superior">
+        <img src="FOTOS/suzukisamuraiteamlogo.png" alt="Logo Suzuki Samurai Team" class="logo" />
+
+        <main>
+            <h1 class="titulo-principal">Suzuki Samurai Team</h1>
+            <p class="subtitulo">
+                Comunitat de:<br />
+                🚘 Suzuki Santana & Samurai 🚘<br />
+                🏁 Sortides, Rutes i Concentracions!! 🏁<br />
+                🔰 Gaudint amb els Suzukis 🔰
+            </p>
+        </main>
+        <a href="https://www.instagram.com/suzukisamuraiteam" target="_blank" class="instagram">@suzukisamuraiteam</a>
+    </header>
+
+
+
+
+
+    <section class="galeria">
+        <h2>Galería</h2>
+        <div class="collage-horizontal">
+            <img src="FOTOS/suzuki1.jfif" alt="Suzuki 1">
+            <img src="FOTOS/suzuki2.jfif" alt="Suzuki 2">
+            <img src="FOTOS/suzuki3.jfif" alt="Suzuki 3">
+            <img src="FOTOS/suzuki4.jfif" alt="Suzuki 4">
+            <img src="FOTOS/suzuki5.jfif" alt="Suzuki 5">
+        </div>
+    </section>
+
+    <style>
+        .collage-horizontal {
+            display: flex;
+            flex-wrap: wrap;
+            /* Permite que salten a la siguiente línea */
+            gap: 10px;
+            max-width: 100%;
+            justify-content: flex-start;
+            /* Alinea las imágenes a la izquierda */
+        }
+
+        .collage-horizontal img {
+            flex: 0 1 200px;
+            /* Ancho base 200px, pueden encoger si hay poco espacio */
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #b30000;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .collage-horizontal img:hover {
+            transform: scale(1.1);
+            z-index: 10;
+        }
+    </style>
+
+
+
+
+    <section class="descargas">
+        <h2>
+            Manuals d'Usuari (Descàrregues gratuïtes)</h2>
+        <ul>
+            <li><a href="MANUALES/MANUAL DE TALLER SUZUKI SAMURAI.pdf" download>Manual de taller SJ410 / SJ413 /
+                    SAMURAI</a></li>
+            <li><a href="MANUALES/MANUAL DE  PROPIETARIO SUZUKI SAMURAI.pdf" download>Manual de propietari</a></li>
+            <li><a href="MANUALES/CATALOGO DE RECAMBIOS SUZUKI SAMURAI.pdf" download>Catàleg de recanvis</a></li>
+        </ul>
+    </section>
+
+    <footer class="pie">
+        © Suzuki Samurai Team
+    </footer>
+</body>
+
+</html>
